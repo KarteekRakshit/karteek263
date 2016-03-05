@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+.full-bg-img {  
+    background: url("http://photo-viewbug.s3.amazonaws.com/media/mediafiles/2015/01/19/43386051_large.jpg") no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
