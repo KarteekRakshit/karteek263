@@ -22,11 +22,27 @@
     <!-- Template style -->
     <link href="css/II-1.css" rel="stylesheet">
     
+    <!-- PreLoader  -->
+    <link href="preloader/preloader.css" rel="stylesheet">
    
 
 </head>
 
 <body>
+    
+    
+     <div id="preloader">
+        <div class="verticalcenter">
+            <div class="text-center">
+                <div id="status">
+                    <h4 class="white-text">Just a second...</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
    
     <header>
 
@@ -367,7 +383,22 @@
     </script>
 
     
-    
+     <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            $('#status').load("preloader/preloader.html", function () {
+                $('#preloader').delay(2500).fadeOut('slow');
+                $('body').delay(2500).css({
+                    'overflow': 'visible'
+                });
+            });
+        });
+        //]]>
+    </script>
     
 
 </body>
